@@ -1,0 +1,190 @@
+/* CДВИГ ПЕРЕИМЕНОВАТЬ И ПЕРЕНЕСТИ ВСЕ ДЛЯ ФУЛА И ФОНА */
+.page-full-block{
+margin-left: 100px;    
+}
+
+.stream-table tbody {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/* Настраиваем оболочку карточек */
+.stream-table tbody tr {
+  position:relative;
+  flex:0 0 calc(50% - 20px);
+  height:150px;
+  border-radius:9px;
+  box-shadow:0 0 3px 1px rgba(0,0,0,0.1);
+  overflow:hidden;
+  margin:10px;
+  transition:all 0.5s;
+}
+
+body {
+background: 
+        url("https://static.tildacdn.com/tild6638-3535-4665-a434-396166643662/lilia_gaevaya_v2_les.png") no-repeat right center / auto 100%,
+        linear-gradient(223.91deg, #060225 -1.97%, #060225 69.05%);
+background-attachment: fixed, scroll;
+}
+.stream-table tr {
+height: 300px !important;
+border-radius: 15px !important;
+}
+.stream-table tr {
+background: #2A2544;
+border-radius: 15px !important;
+border: 1px solid transparent!important;
+background: 
+    linear-gradient(#2A2544, #2A2544) padding-box, /* фон ячейки */
+    linear-gradient(165.55deg, #FFFFFF -2.53%, #2A2544 79.97%) border-box; /* градиентная обводка */
+}
+.stream-table tr:hover {
+transform: none !important;
+border-radius: 15px !important;
+background: 
+    linear-gradient(#2A2544, #2A2544) padding-box, /* фон ячейки */
+    linear-gradient(165.55deg, #FFFFFF -2.53%, #2A2544 79.97%) border-box; /* градиентная обводка */
+}
+.stream-table tr td:hover {
+transform: none !important;
+border-radius: 15px !important;
+background: none !important;   
+}
+
+.stream-table tr a:hover {
+background: #2A2544 !important;        
+}
+.stream-table tbody tr td:after {
+display: none !important;   
+}
+.stream-table tbody tr td .stream-title {
+color: #FFF !important;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 36px;
+padding: 0 !important;
+position: absolute;
+top: 140px !important;
+}
+.stream-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 3; /* Для современных браузеров */
+  -webkit-line-clamp: 3; /* Для Safari и Chromium */
+  max-height: 4.5em; /* 3 строки * line-height */
+  line-height: 1.5em;
+  word-break: break-word;
+}
+.stream-table tbody tr td div b {
+color: #FFF !important;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400 !important;
+font-size: 15px;
+line-height: 19px;
+}
+.stream-table tbody tr td div {
+color: #FFF !important;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400 !important;
+font-size: 15px;
+line-height: 19px;
+position: absolute;
+top: 120px !important;
+}
+
+.stream-table tr td a {
+width: 100% !important;
+height: 100%;!important;
+}
+.stream-table tr td{
+width: 100% !important;
+height: 100% !important;
+}
+.training-row {
+  display: flex !important;
+  width: 100%;
+}
+
+/*========== Оформление списка тренигов !Верх! ==========*/
+
+.page-header h1 {
+font-family: 'Felidae';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 70px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;    
+}
+
+.breadcrumbs a {    
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #ffffff;
+}
+.breadcrumbs a:hover  {
+text-decoration: none !important;   
+}
+.breadcrumbs a:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #ffffff; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg);
+position: relative;
+top: 3px;
+transition: transform 0.5s ease;
+}
+.breadcrumbs a:hover:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #ffffff; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg) translateX(-5px);
+position: relative;
+top: 3px;
+}
+
+.page-menu li a{
+color: #FFF !important;    
+}
+.page-menu li.active {
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%) !important;    
+border-radius: 5px;
+}
+.content-menu{
+border-bottom: 0px solid #eee !important;
+}
+.clearfix {
+color: #FFF !important;    
+}
+.gc-tags span{
+color: #FFF !important;    
+}
+@media screen and (max-width: 768px) {
+.page-header h1{
+font-size: 30px;
+position: relative;
+}
+.breadcrumbs {
+position: relative;
+}
+}
