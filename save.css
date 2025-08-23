@@ -1,190 +1,186 @@
-/* CДВИГ ПЕРЕИМЕНОВАТЬ И ПЕРЕНЕСТИ ВСЕ ДЛЯ ФУЛА И ФОНА */
-.page-full-block{
-margin-left: 100px;    
+/*========== Переменные цветов ==========*/
+:root {
+  --bg-gradient-start: #060225;
+  --bg-gradient-end: #060225;
+  --card-bg: #2A2544;
+  --card-border-gradient-start: #FFFFFF;
+  --card-border-gradient-end: #2A2544;
+  --text-white: #FFFFFF;
+  --menu-active-gradient: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
 }
 
+/*========== Общие стили страницы ==========*/
+body {
+  background: 
+    url("https://static.tildacdn.com/tild6638-3535-4665-a434-396166643662/lilia_gaevaya_v2_les.png") no-repeat right center / auto 100%,
+    linear-gradient(223.91deg, var(--bg-gradient-start) -1.97%, var(--bg-gradient-end) 69.05%);
+  background-attachment: fixed, scroll;
+  margin: 0;
+  font-family: 'Futura PT', sans-serif;
+  color: var(--text-white);
+}
+
+.page-full-block {
+  margin-left: 100px;
+}
+
+/*========== Таблица стримов ==========*/
 .stream-table tbody {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
-/* Настраиваем оболочку карточек */
 .stream-table tbody tr {
-  position:relative;
-  flex:0 0 calc(50% - 20px);
-  height:150px;
-  border-radius:9px;
-  box-shadow:0 0 3px 1px rgba(0,0,0,0.1);
-  overflow:hidden;
-  margin:10px;
-  transition:all 0.5s;
+  position: relative;
+  flex: 0 0 calc(50% - 20px);
+  height: 300px !important; /* оставляем твою высоту */
+  border-radius: 15px !important;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+  transition: all 0.5s;
+  background: 
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
+  border: 1px solid transparent !important;
 }
 
-body {
-background: 
-        url("https://static.tildacdn.com/tild6638-3535-4665-a434-396166643662/lilia_gaevaya_v2_les.png") no-repeat right center / auto 100%,
-        linear-gradient(223.91deg, #060225 -1.97%, #060225 69.05%);
-background-attachment: fixed, scroll;
-}
-.stream-table tr {
-height: 300px !important;
-border-radius: 15px !important;
-}
-.stream-table tr {
-background: #2A2544;
-border-radius: 15px !important;
-border: 1px solid transparent!important;
-background: 
-    linear-gradient(#2A2544, #2A2544) padding-box, /* фон ячейки */
-    linear-gradient(165.55deg, #FFFFFF -2.53%, #2A2544 79.97%) border-box; /* градиентная обводка */
-}
-.stream-table tr:hover {
-transform: none !important;
-border-radius: 15px !important;
-background: 
-    linear-gradient(#2A2544, #2A2544) padding-box, /* фон ячейки */
-    linear-gradient(165.55deg, #FFFFFF -2.53%, #2A2544 79.97%) border-box; /* градиентная обводка */
-}
-.stream-table tr td:hover {
-transform: none !important;
-border-radius: 15px !important;
-background: none !important;   
+.stream-table tbody tr:hover {
+  transform: none !important;
 }
 
-.stream-table tr a:hover {
-background: #2A2544 !important;        
+.stream-table tbody tr td:hover {
+  transform: none !important;
+  background: none !important;
 }
-.stream-table tbody tr td:after {
-display: none !important;   
+
+.stream-table tr td a {
+  width: 100% !important;
+  height: 100% !important;
 }
+
+.stream-table tr td {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/*========== Текст внутри карточек ==========*/
 .stream-table tbody tr td .stream-title {
-color: #FFF !important;
-font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 32px;
-line-height: 36px;
-padding: 0 !important;
-position: absolute;
-top: 140px !important;
-}
-.stream-title {
+  color: var(--text-white) !important;
+  font-family: 'Futura PT' !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 36px !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 140px !important;
+  width: 90%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-clamp: 3; /* Для современных браузеров */
-  -webkit-line-clamp: 3; /* Для Safari и Chromium */
-  max-height: 4.5em; /* 3 строки * line-height */
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  max-height: 4.5em;
   line-height: 1.5em;
   word-break: break-word;
 }
-.stream-table tbody tr td div b {
-color: #FFF !important;
-font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400 !important;
-font-size: 15px;
-line-height: 19px;
-}
+
 .stream-table tbody tr td div {
-color: #FFF !important;
-font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400 !important;
-font-size: 15px;
-line-height: 19px;
-position: absolute;
-top: 120px !important;
+  color: var(--text-white) !important;
+  font-family: 'Futura PT' !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 19px !important;
+  position: absolute;
+  top: 120px !important;
 }
 
-.stream-table tr td a {
-width: 100% !important;
-height: 100%;!important;
+.stream-table tbody tr td div b {
+  color: var(--text-white) !important;
+  font-family: 'Futura PT' !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 19px !important;
 }
-.stream-table tr td{
-width: 100% !important;
-height: 100% !important;
-}
+
+/*========== Обёртка тренингов ==========*/
 .training-row {
   display: flex !important;
   width: 100%;
 }
 
-/*========== Оформление списка тренигов !Верх! ==========*/
-
+/*========== Заголовки страницы ==========*/
 .page-header h1 {
-font-family: 'Felidae';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 70px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;    
+  font-family: 'Felidae', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white);
 }
 
+/*========== Хлебные крошки ==========*/
 .breadcrumbs a {    
-font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-color: #ffffff;
-}
-.breadcrumbs a:hover  {
-text-decoration: none !important;   
-}
-.breadcrumbs a:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
-content: "";
-display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
-width: 15px; /* Ширина изображения */
-height: 15px; /* Высота изображения */
-mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
-background-color: #ffffff; /* Тот самый "цвет" SVG */
-background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
-margin-left: 5px; /* Отступ слева от псевдоэлемента */
-transform: scale(1.4) rotate(180deg);
-position: relative;
-top: 3px;
-transition: transform 0.5s ease;
-}
-.breadcrumbs a:hover:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
-content: "";
-display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
-width: 15px; /* Ширина изображения */
-height: 15px; /* Высота изображения */
-mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
-background-color: #ffffff; /* Тот самый "цвет" SVG */
-background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
-margin-left: 5px; /* Отступ слева от псевдоэлемента */
-transform: scale(1.4) rotate(180deg) translateX(-5px);
-position: relative;
-top: 3px;
+  font-family: 'Futura PT', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--text-white);
+  text-decoration: none !important;
+  position: relative;
 }
 
-.page-menu li a{
-color: #FFF !important;    
+.breadcrumbs a:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+  background-color: var(--text-white);
+  background-size: contain;
+  margin-left: 5px;
+  transform: scale(1.4) rotate(180deg);
+  top: 3px;
+  position: relative;
+  transition: transform 0.5s ease;
 }
+
+.breadcrumbs a:hover:after {
+  transform: scale(1.4) rotate(180deg) translateX(-5px);
+}
+
+/*========== Меню страницы ==========*/
+.page-menu li a {
+  color: var(--text-white) !important;
+}
+
 .page-menu li.active {
-background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%) !important;    
-border-radius: 5px;
+  background: var(--menu-active-gradient) !important;
+  border-radius: 5px;
 }
-.content-menu{
-border-bottom: 0px solid #eee !important;
+
+.content-menu {
+  border-bottom: 0 !important;
 }
-.clearfix {
-color: #FFF !important;    
+
+.clearfix, .gc-tags span {
+  color: var(--text-white) !important;
 }
-.gc-tags span{
-color: #FFF !important;    
-}
+
+/*========== Адаптив ==========*/
 @media screen and (max-width: 768px) {
-.page-header h1{
-font-size: 30px;
-position: relative;
-}
-.breadcrumbs {
-position: relative;
-}
+  .page-header h1 {
+    font-size: 30px;
+    position: relative;
+  }
+  
+  .breadcrumbs {
+    position: relative;
+  }
 }
