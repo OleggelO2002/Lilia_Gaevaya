@@ -17,6 +17,14 @@ background: #ffffff !important;
   position: relative;
 }
 
+.custom-submenu li:hover {
+    background: rgb(0 0 0 / 20%) !important;
+}
+
+.custom-submenu .subitem-link:hover {
+    background: rgb(255 255 255 / 0%) !important;
+}    
+
 .gc-account-user-submenu-bar-notifications_button_small,
 .gc-account-user-submenu-bar-profile {
   visibility: visible; /* Отображаем нужные элементы */
