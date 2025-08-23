@@ -9,7 +9,7 @@ box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
   background-position: center !important;
 }
 .gc-account-leftbar .notify-count {
-background: #D5BAAF !important;    
+background: #ffffff !important;    
 }
 
 .gc-account-user-submenu-bar {
@@ -130,46 +130,46 @@ top: 20px;
 
 /* Индивидуальные иконки для каждого пункта */
 .menu-item a[title="Обучение"]::before {
-  background-image: url('https://static.tildacdn.com/tild3039-3039-4136-b166-376436306164/teach-icon-1.svg');
+  background-image: url('https://static.tildacdn.info/tild3337-6135-4162-b266-656230363437/teach-icon-2.svg');
 }
 .menu-item a[title="Свернуть меню"]::before {
-  background-image: url('https://static.tildacdn.com/tild6636-3234-4338-b863-326662656539/2arrow.png');
+  background-image: url('https://static.tildacdn.info/tild6336-6663-4766-b966-633836373234/2arrow.svg');
 }
 .menu-item a[title="Apps"]::before {
-  background-image: url('https://static.tildacdn.com/tild6633-6361-4131-b530-333131313630/chatium-icon-1_2.svg');
+  background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
 }
 .menu-item a[title="Сообщения"]::before {
-  background-image: url('https://static.tildacdn.com/tild3933-3231-4535-b633-396432623033/notifications-icon-1.svg');
+  background-image: url('https://static.tildacdn.info/tild6231-6266-4536-b463-656434353338/notifications-icon-1.svg');
 }
 
 .menu-item a[title="Сайт"]::before {
-  background-image: url('https://static.tildacdn.com/tild3166-6664-4633-b832-306135333634/site-icon.svg');
+  background-image: url('https://static.tildacdn.info/tild6535-6165-4563-a339-393230323731/site-icon.svg');
 }
 
 .menu-item a[title="Ученики"]::before {
-  background-image: url('https://static.tildacdn.com/tild6663-6539-4234-b865-343839386231/member-icon.svg');
+  background-image: url('https://static.tildacdn.info/tild3062-6637-4237-b563-626534656534/member-icon.svg');
 }
 
 .menu-item a[title="CRM"]::before {
-  background-image: url('https://static.tildacdn.com/tild6131-3835-4163-b066-303963386135/CRM-icob.svg');
+  background-image: url('https://static.tildacdn.info/tild3135-3635-4265-a163-306331313363/CRM-icob.svg');
 }
 
 .menu-item a[title="Продажи"]::before {
-  background-image: url('https://static.tildacdn.com/tild3432-3264-4666-b232-343164316664/sale-icon.svg');
+  background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
 }
 
 .menu-item a[title="Служба заботы"]::before {
-  background-image: url('https://static.tildacdn.info/tild3235-6131-4436-b833-326462346130/paperplane-icon_2.svg');
+  background-image: url('https://static.tildacdn.info/tild6339-6665-4831-b434-323734326135/paperplane-icon_3.svg');
 }
 .menu-item a[title="Служба поддержки"]::before {
   background-image: url('https://static.tildacdn.com/tild3933-3231-4535-b633-396432623033/notifications-icon-1.svg');
 }
 
 .menu-item a[title="Покупки"]::before {
-  background-image: url('https://static.tildacdn.com/tild3432-3264-4666-b232-343164316664/sale-icon.svg');
+  background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
 }
 .menu-item a[title="Mobile"]::before {
-  background-image: url('https://static.tildacdn.com/tild6633-6361-4131-b530-333131313630/chatium-icon-1_2.svg');
+  background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
 }
 
 
@@ -180,7 +180,7 @@ display: none;
     content: "Уведомления";
     margin-left: 8px;
     font-size: 14px;
-    color: #333;
+    color: #FFFFFF;
     vertical-align: middle !important;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
@@ -266,7 +266,7 @@ height: 66px !important;
 /* === УВЕДОМЛЕНИЯ === */
 .gc-account-user-menu .menu-item .notify-count {
     background-color: #ff3b30;
-    color: white;
+    color: #5538BA;
     font-size: 12px;
     font-weight: bold;
     min-width: 20px;
@@ -495,18 +495,41 @@ border-radius: 1000px;
 }
 /*______________________________________*/
 /*основа меню*/
-.gc-account-leftbar .gc-account-user-menu li a:hover{
-background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
+/.gc-account-leftbar .gc-account-user-menu li a:hover{
+/background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
 box-shadow: inset -4px 0px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 0px 4px rgba(0, 0, 0, 0.25);
 }
+
+.subitem-link:hover {
+background: #ffffff !important;
+}
+
+[class^="menu-item-"] {
+  
+}
+
 .gc-account-leftbar .gc-account-user-menu li a{
-  width: 240px;
   background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
+  width: 240px;
   border-radius: 10px;
   height: 66px;
   display: flex !important;
   align-items: flex-start;
 }
+.select > a {
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%) !important;      
+}
+.menu-item.active > a {
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%) !important;      
+}
+.custom-submenu .subitem-link {
+background: transparent !important; 
+color: #FFF !important;
+}
+.selected > a {
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%) !important;      
+}    
+
 .menu-item a[title]::after {
     content: attr(title); /* Берем текст из атрибута title */
     margin-left: 8px; /* Отступ от иконки */
