@@ -1,0 +1,182 @@
+/*===================CSS для поиска===================*/
+/*===================CSS для поиска===================*/
+@media screen and (min-width: 768px) {
+#searchWrapper #searchContainer {
+margin-top: 0px;    
+width: 40% !important;
+}
+
+.breadcrumbs #searchContainer {
+margin-bottom: 50px !important;   
+}
+
+#searchContainer{
+box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+}
+#searchWrapper {
+  background-image: url("data:image/svg+xml,%3Csvg width='1618' height='158' viewBox='0 0 1618 158' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M98.5 1C131.5 33.5 243.3 93.4 426.5 73C655.5 47.5 939.5 -56 1228 73C1458.8 176.2 1583.5 130.333 1617 94.5' stroke='%23D5BAAF'/%3E%3Cpath d='M0.5 53.4992C40.3333 39.3326 92 49.4966 155.5 98.9992C258.058 178.95 387.333 158 485.5 143.5' stroke='%23D5BAAF'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: calc(100vw - 280px) !important; 
+}
+#searchContainer {
+left: 20% !important;
+}
+
+
+#searchResults{
+margin-top: 5px;
+border: none !important;
+box-shadow: 0px 5px 8.5px rgba(0, 0, 0, 0.5);
+}
+#searchResults h2{
+margin-top: 15px;
+font-size: 14px;
+font-weight: 600;
+color: #CFB1A5;
+margin-left: 10px;
+}
+.result-item h3{
+margin-top: 10px;
+font-size: 15px;
+font-weight: 600;
+color: #333333;   
+margin-left: 20px;
+}
+.result-item p{
+font-size: 14px;
+font-weight: 500;
+color: #A9A9A9;
+margin-left: 20px;
+}
+.result-item a{
+padding-left: 15px !important;
+padding-right: 15px !important;
+padding-bottom: 5px;
+padding-top: 5px; 
+margin-left: 20px;
+background: #D5BAAF;
+border-radius: 5px;
+color: #FFFFFF;
+}
+.result-item img{
+display: none;
+
+}
+.lesson-item{
+margin-bottom: 20px;
+}
+#searchContainer {
+margin-top: 10px;
+height: 50px;
+width: 60% !important;
+border-radius: 10px !important;
+left: 10%;
+}
+
+#searchWrapper{
+background-color: #FFFFFF !important;
+height: 70px;
+top: 0;
+bottom: auto;
+position: absolute; 
+}
+}
+
+.logo-link img {
+position: relative;  
+top: -10px; 
+border-radius: 10px;
+}
+.annotate-block {
+position: absolute;
+left: auto;
+right: 40px;
+top: 10px;
+border-radius: 10px;
+background: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+
+#searchContainerMobile{
+top: 0px ;
+z-index: 999999 !important;
+}
+#searchResultsMobile{
+z-index: 999999 !important;
+}
+
+#searchContainerMobile{
+overflow: visible !important;
+}
+#searchInputMobile{
+border-radius: 30px;    
+}
+#searchResultsMobile{
+margin-top: 5px;
+border: none !important;
+box-shadow: 0px 5px 8.5px rgba(0, 0, 0, 0.5);
+width: 90vw !important;
+left: -10vw !important;
+}
+#searchResultsMobile h2{
+margin-top: 15px;
+font-size: 14px;
+font-weight: 600;
+color: #CFB1A5;
+margin-left: 10px;
+}
+.result-item h3{
+margin-top: 10px;
+font-size: 15px;
+font-weight: 600;
+color: #333333;   
+margin-left: 20px;
+}
+.result-item p{
+font-size: 14px;
+font-weight: 500;
+color: #A9A9A9;
+margin-left: 20px;
+}
+.result-item a{
+padding-left: 15px !important;
+padding-right: 15px !important;
+padding-bottom: 5px;
+padding-top: 5px; 
+margin-left: 20px;
+background: #D5BAAF !important;
+border-radius: 5px;
+color: #FFFFFF;
+}
+.result-item img{
+display: none;
+}
+.lesson-item{
+margin-bottom: 20px;
+}
+#searchContainerMobile{
+left: auto;
+right: 0;
+position: absolute !important;
+box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.08);
+margin-top: 5px;
+margin-right: 50px;
+flex-direction: row-reverse;
+}
+
+
+.gc-account-leftbar {
+width: 100vw !important;
+    }
+}
+.gc-user-admin .logo-link img {
+top: -41px !important;
+position: relative;
+}
+.logo-link img {
+top: -58px; 
+position: absolute;
+}
