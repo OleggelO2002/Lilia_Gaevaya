@@ -1,3 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@media screen and (min-width: 768px) {
+.xdget-training .lesson-list{
+margin-left: -20px !important;
+}
+[class*=" lesson-id-"]{
+margin-left: 0px !important;
+}
+}
+
+@media screen and (max-width: 768px) {
+.xdget-training .lesson-list li{
+padding-left: 10px;
+}
+.xdget-training .lesson-list{
+margin-left: -15px;
+margin-right: -15px;
+}
+
+[class*=" lesson-id-"]{
+margin-right: 0px !important;
+margin-left: 0px !important;
+}
+}
+
+/*========== ИСПРАВИТЬ ВРЕМЕННОЕ ==========*/
+[class*="custom-leson-"] .lesson-number{
+display: none;
+background: #D5BAAF;
+padding: 8px 15px;
+border-radius: 5px;    
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+color: #FFFFFF;
+position: absolute;
+top: 10px;
+}   
+/*========== ИСПРАВИТЬ ВРЕМЕННОЕ ==========*/
+
+:root {
+    --bej-color: #D5BAAF;
+    --button-padding: 15px 32px;
+    --font-size: 16px;
+}
+/.header-trainigs img {
+display: none;    
+}
+.container{
+margin-left: 5% !important;    
+}
+body {
+background: #FAFAFA;   
+}
+
+/*========== Оформление списка уроков ==========*/
+[class*="lesson-id-"] {
+display: block !important;
+background: #fff;
+filter: drop-shadow(0px 0px 18.5px rgba(0, 0, 0, 0.07));
+border-radius: 15px !important ;
+background: #fff url("https://thumb.tildacdn.com/tild3732-3535-4030-b331-613464613462/-/format/webp/Frame_312.png.webp") no-repeat center center !important;
+background-size: cover !important; /* чтобы на hover тоже занимало всю ячейку */
+min-height: 155px !important;
+margin-bottom: 30px;
+height: auto !important; /* обязательно! */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+[class*="lesson-id-"]:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 38.5px rgba(0, 0, 0, 0.1);    
+}
+.col-md-8{
+padding-left: 0px;
+}
+.lesson-list li table{
+min-width: 80%
+}
+@media screen and (max-width: 768px) {
+[class*="lesson-id-"] {
+min-height: 100px !important;
+border-radius: 10px !important;
+/width: 90vw;
+}
+.col-md-8{
+padding-left: 0px;
+padding-right: 0px !important;
+}
+.lesson-list li .info{
+margin-left: 0px !important;        
+    }
+}
+.lesson-list {
+background: transparent;    
+}
+.info {
+background: transparent !important;
+margin-left: 27px !important;
+border-left: 0 !important;
+margin-top: 0px; 
+}
+.hidden-xs {
+display: none;    
+}
+.user-state-bg{
+background: transparent !important; 
+}
+.glyphicon {
+display: none;    
+}
+.lesson-list {
+padding: 0
+}
+.lesson-list li .item-image {
+position: absolute;
+right: 10px;
+top: 10px;
+left: auto;
+bottom: auto;
+min-height: 130px !important;
+min-width: 130px !important;
+width: auto !important;
+border-radius: 15px; 
+}
+.lesson-list__video-watched {
+display: none !important;    
+}
+.user-state-reached .lesson-date {
+display: none !important;   
+}
+/*========== Оформление списка уроков !Урок №...! ==========*/
+
+[class*="custom-lesson-"] .lesson-number{
+background: #2A2544;
+padding: 8px 15px;
+border-radius: 5px;
+    
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #FFFFFF;
+position: absolute;
+top: 10px;
+}
+@media screen and (max-width: 768px) {
+[class*="custom-lesson-"] .lesson-number{
+background: #2A2544;
+padding: 8px 15px;
+border-radius: 5px;    
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+color: #FFFFFF;
+position: absolute;
+top: 10px;
+}    
+}
+
+
+/*========== Оформление списка уроков !текст! ==========*/
+@media screen and (min-width: 768px) {
+.lesson-list .title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500 !important;
+font-size: 24px;
+line-height: 29px;
+text-transform: uppercase;
+max-width: 80% !important;
+font-style: normal;
+font-size: 23px !important;
+line-height: 31px !important;
+color: #2A2544;
+padding-top: 10px;
+margin-top: 30px;
+}
+}
+.lesson-list .description {
+        margin-top: 10px;
+        color: #363636;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        padding-left: 1px;
+        max-width: 80% !important;
+}
+@media screen and (max-width: 768px) {
+.lesson-list .title {
+position: relative !important;
+font-family: 'Montserrat';
+max-width: 90% !important;
+font-style: normal;
+font-weight: 650 !important;
+font-size: 15px !important;
+line-height: 19px !important;
+text-transform: uppercase;
+color: #2A2544;
+padding-top: 10px;
+margin-top: 30px;
+left: -20px;
+}
+.lesson-list .description {
+margin-top: 5px;
+color: #717171;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+position: relative;
+left: -20px;
+}
+}
+.user-state-need_accomplish .user-state-label.user-state-label-ex{
+font-style: normal;
+font-weight: 600 !important;
+color: #2A2544;  
+}
+.user-state-need_accomplish .user-state-label.user-state-label-ex::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    mask: url(https://static.tildacdn.info/tild3138-6266-4662-b330-663338363238/Circle_Warning.svg) no-repeat center;
+    background-color: #2A2544;
+    background-size: auto;
+    top: 5px;
+    position: relative;
+}
+.user-state-label.lesson-date {
+color: #5F3ECF !important;    
+}
+.user-state-has_mission .user-state-label.user-state-label-ex{
+font-style: normal;
+font-weight: 600 !important;
+color: #2A2544;    
+}
+.user-state-has_mission .user-state-label.user-state-label-ex::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    mask: url(https://static.tildacdn.info/tild3138-6266-4662-b330-663338363238/Circle_Warning.svg) no-repeat center;
+    background-color: #2A2544;
+    background-size: auto;
+    top: 5px;
+    position: relative;
+}
+
+
+
+/*========== Оформление списка уроков !недоступные! ==========*/
+.user-state-not_reached .item-image{
+filter: grayscale(100%);    
+}
+
+.user-state-not_reached [class*="custom-lesson-"] .lesson-number{
+background: #D7D7D7;
+padding: 8px 15px;
+border-radius: 5px;    
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #FFFFFF;
+position: absolute;
+top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+.user-state-not_reached [class*="custom-lesson-"] .lesson-number{
+background: #D7D7D7;
+padding: 8px 15px;
+border-radius: 5px;    
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+color: #FFFFFF;
+position: absolute;
+top: 10px;    
+} 
+.user-state-not_reached .user-state-label{
+color:#9e7c6e;
+display: flex; /* Включаем Flexbox для контейнера */
+align-items: center; /* Выравнивание по центру по вертикали */       
+/position: absolute;
+/top: 40%;
+/left: 20% !important;
+/transform: scale(1.2)!important;
+z-index: 2;
+}
+}
+/.user-state-not_reached .user-state-label{
+color:#424242;
+display: flex; /* Включаем Flexbox для контейнера */
+align-items: center; /* Выравнивание по центру по вертикали */       
+position: absolute;
+top: 40%;
+left: 30%;
+transform: scale(1.5);
+z-index: 2;
+}
+.user-state-not_reached .title {
+color: #363636 !important;    
+}
+
+/.user-state-not_reached::after{
+content: ""; /* Пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ширина как у основного элемента */
+  height: 100%; /* Высота как у основного элемента */
+  background: rgba(189, 189, 189, 0.01);
+  backdrop-filter: blur(4px);
+  z-index: 1; /* Размещаем под основным контентом */     
+}
+.user-state-not_reached {
+  position: relative; /* Делаем его опорной точкой для псевдоэлемента */
+}
+
+
+
+/*========== Оформление списка тренигов !Верх! ==========*/
+.breadcrumbs a {    
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #292929;
+}
+.breadcrumbs a:hover  {
+text-decoration: none !important;   
+}
+.breadcrumbs a:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #292929; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg);
+position: relative;
+top: 3px;
+transition: transform 0.5s ease;
+}
+.breadcrumbs a:hover:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #292929; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg) translateX(-5px);
+position: relative;
+top: 3px;
+}
+.content-menu {
+display: none;    
+}
+@media screen and (max-width: 768px) {
+.page-header h1{
+font-size: 20px;
+
+position: relative;
+}
+.breadcrumbs {
+
+position: relative;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*========== Переменные цветов ==========*/
 :root {
   --bg-gradient-start: #060225;
@@ -20,8 +417,17 @@ body {
   color: var(--text-white);
 }
 
+.logo-link img {
+display: none;    
+}
+@media screen and (min-width: 768px) {
 .page-full-block {
   margin-left: 100px;
+}
+
+
+.container{
+margin-left: 0px !important;
 }
 
 /*========== Таблица стримов ==========*/
@@ -29,7 +435,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
+}
 .stream-table tbody tr {
   position: relative;
   flex: 0 0 calc(50% - 20px);
@@ -38,7 +444,7 @@ body {
   margin: 10px;
   overflow: hidden;
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
-  transition: all 0.5s;
+  transition: all 0.45s;
   background: 
     linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
     linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
@@ -46,7 +452,7 @@ body {
 }
 
 .stream-table tbody tr:hover {
-  transform: none !important;
+  transform: translateY(-10px);
 }
 
 .stream-table tbody tr td:hover {
@@ -183,4 +589,6 @@ body {
   .breadcrumbs {
     position: relative;
   }
-}
+} 
+
+
