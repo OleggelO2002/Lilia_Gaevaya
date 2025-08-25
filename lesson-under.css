@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+.gc-main-content {
+    background-image: url('https://static.tildacdn.com/tild3664-3235-4434-b964-313339626163/lilia_gaevaya_v2_les.png') !important;
+    background-repeat: repeat-y !important; /* повтор по вертикали */
+    background-position: center top !important; /* выравнивание по центру */
+    background-size: 100% auto !important; /* ширина растянута, высота — авто */
+}
+
+body.chatium_body{
+padding-right: 15px !important;
+padding-left: 15px !important;    
+}
+
+.center-block {
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+}
+:root {
+    --content-width: 1200px !important; /* Ширина контента */
+    --parent-wv: 100vw !important;      /* Ширина родительского элемента или окна браузера */
+}
+@media (min-width: 768px) {
+html body{
+        --container-width: min(var(--content-width), calc(var(--parent-wv, 100vw) - 300px - 20px - 36px)) !important;
+    }
+
+
+#gcAccountUserMenu ~ .gc-main-content.with-left-menu .lite-page.block-set {
+    width: var(--container-width) !important;
+    margin: 0 auto;
+}
+.container{
+width: calc(100vw - 280px) !important; 
+margin-left: 0px !important;
+margin-right: 0px !important;
+padding-right: 0px !important;
+    }
+}
+@media (max-width: 768px) {
+.gc-main-content{
+padding-left: 10px;
+padding-right: 10px;
+    }
+}
+li::before {
+display: none;    
+}
+
+.page-header h1 a {
+color: #FFF;    
+}
+
+.breadcrumb a {    
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFF;
+}
+.breadcrumb a:hover  {
+text-decoration: none !important;   
+}
+.breadcrumb a:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #FFF; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg);
+position: relative;
+top: 3px;
+transition: transform 0.5s ease;
+}
+.breadcrumb a:hover:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #FFF; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg) translateX(-5px);
+position: relative;
+top: 3px;
+}
+
+
+.page-header {
+border-bottom: 0px !important; 
+}
+
+.lesson-header-block.row-section {
+  margin: 0 auto;
+  border-bottom: 0px !important ;
+}
+@media (max-width: 768px) {
+    .lesson-header-block.row-section {
+    border-radius: 10px;
+    background-image: url('https://static.tildacdn.com/tild3633-6538-4164-b161-316537666666/Frame_321.png') !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover !important; /* вот здесь вместо 100% auto */
+    }    
+}
+@media (min-width: 768px) {
+    .lesson-header-block.row-section {
+        background-image: url('https://static.tildacdn.com/tild6362-3264-4237-a239-393464633239/Frame_317.png') !important;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover !important; /* вот здесь вместо 100% auto */
+        width: 70vw !important;
+        border-radius: 15px;        
+    }    
+}
+
+.text-center.hidden-xs span {
+color: #292929 !important;
+background: #FFF;
+padding: 5px 10px;
+border-radius: 20px;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+}
+
+.user-state-need_accomplish .user-state-label, .text-center.hidden-xs .user-state-label{
+margin-top: 5px;
+font-family: 'Montserrat' !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 13px !important;
+color: #fff;    
+}
+
+.lesson-title-value {
+position: relative !important;
+font-family: 'Montserrat'!important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 35px !important;
+text-align: center !important;
+text-transform: uppercase !important;
+color: #FFFFFF !important;  
+}
+
+.lesson-header-block.row-section {
+  display: flex;
+  flex-direction: column;   /* делаем вертикальную колонку */
+  justify-content: space-between; /* верх и низ распределяются */
+}
+
+.lesson-header-block .header-view {
+  order: 2;  /* заголовок будет ниже */
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.lesson-header-block .lesson-navigation {
+  order: 1;  /* навигация будет выше */
+}
+.lesson-navigation a {
+font-family: 'Montserrat' !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 13px !important;
+color: #ffffff !important;
+}
+@media (max-width: 768px) {
+    .lesson-navigation a{
+font-size: 10px !important;
+    }    
+}
+.lesson-navigation a:hover{
+text-decoration: none !important;
+}
+
+.fui-arrow-left::after{
+content: "" !important;
+display: inline-block !important; /* Позволяет задать размеры для псевдоэлемента */
+width: 35px !important; /* Ширина изображения */
+height: 15px !important; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3534-3839-4533-b364-616630356631/Arrow_14.svg') no-repeat center;
+background-color: #ffffff !important; /* Тот самый "цвет" SVG */
+background-size: contain !important; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px !important; /* Отступ слева от псевдоэлемента */
+transform: scale(1.1) rotate(180deg) !important;
+position: relative !important;
+top: 3px !important;
+transition: transform 0.5s ease !important;
+}
+.fui-arrow-left:hover::after{
+transform: translateX(-5px) scale(1.1) rotate(180deg) !important;
+transition: width 0.3s ease !important;
+}
+.lesson-navigation td:first-child:has(a:hover) .fui-arrow-left::after {
+  transform: translateX(-5px) scale(1.1) rotate(180deg) !important;
+  transition: all 0.3s ease !important;
+}
+
+
+.fui-arrow-right::after{
+content: "" !important;
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 35px !important; /* Ширина изображения */
+height: 15px !important; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3534-3839-4533-b364-616630356631/Arrow_14.svg') no-repeat center;
+background-color: #ffffff !important; /* Тот самый "цвет" SVG */
+background-size: contain !important; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px !important; /* Отступ слева от псевдоэлемента */
+transform: scale(1.1) !important ;
+position: relative !important;
+top: 3px !important;
+transition: transform 0.5s ease !important;
+}
+.fui-arrow-right:hover::after{
+transform: translateX(5px) scale(1.1) !important;
+transition: width 0.3s ease !important;
+}
+.lesson-navigation td:last-child:has(a:hover) .fui-arrow-right::after {
+  transform: translateX(5px) scale(1.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+div.hidden-xs {
+font-size: 12px !important;
+color: #FFF;
+margin-left: 45px;    
+}
+.text-right div.hidden-xs {
+margin-right: 45px !important;    
+}
+
+
+/*================= УРОК ТЕКСТЫ БЛОКИ И Т.Д.========================*/
+
+.lt-lesson-mission-block {
+margin-top: 20px !important;
+padding-top: 20px;
+background: #FFFFFF;
+border-radius: 15px 15px 0px 0px !important;
+border: 0px !important;
+}
+
+.lt-lesson-mission-block h3{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+color: #201D2F;
+padding-left: 20px !important;
+}
+.lesson-mission-text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+color: #201D2F;    
+}
+.lesson-mission-wrapper{
+border: 0px !important;
+}
+.answer-form {
+background: #FFFFFF;    
+}
+.lt-lesson-comment-block .col-md-12 {
+background: #FFF !important;
+width: calc(100% - 15px) !important;
+}
+
+textarea {
+border-color: #603FD0 !important;
+border-radius: 7px !important;
+border: 2px solid;
+}
+
+.btn-send-answer {
+background-color: transparent !important;
+  display: inline-block;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 650 !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none !important;
+  cursor: pointer;
+  border: 13px solid transparent !important;
+  -webkit-border-image: url('https://static.tildacdn.info/tild6236-3835-4166-b336-623563653733/Group_48097408.svg') 20 round !important;
+  background-clip: padding-box !important; /* чтобы фон не перекрывал края */ 
+  transition: transform 0.4s ease;    
+}
+.btn-send-answer:hover{
+transform: translatey(-5px)
+}
+
+.lesson-answers-title h3 a{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+color: #6A29AD;
+}
+
+.answer-date a, .user-profile-link .text, .lesson-answers-title .pull-right a, .answer-status a, .b-like .button.positive, .b-notifications-subscribe .button, .btn-save-draft {
+color: #6A29AD !important;    
+}
+
+.modal-block-content .btn-success {
+  background-color: transparent !important;
+  display: inline-block;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 650 !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none !important;
+  cursor: pointer;
+  border: 20px solid transparent !important;
+  -webkit-border-image: url('https://static.tildacdn.info/tild6236-3835-4166-b336-623563653733/Group_48097408.svg') 25 round !important;
+  background-clip: padding-box !important; /* чтобы фон не перекрывал края */ 
+  transition: transform 0.4s ease;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.modal-block-content .btn-success:hover {
+transform: translatey(-15px)
+}
+
+.text-large.f-text {
+background: #FFF !important;
+padding: 20px !important;
+border-radius: 15px !important;
+}
+
