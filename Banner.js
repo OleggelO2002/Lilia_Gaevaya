@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Проверяем, есть ли уже баннер
+  if (document.querySelector('.custom-banner')) return;
+
   // ====== СОЗДАЁМ БАННЕР ======
   const img = document.createElement('img');
 
   const isMobile = window.innerWidth <= 768;
-  if (isMobile) {
-    img.src = 'https://optim.tildacdn.pub/tild3439-3361-4565-a137-663462363365/-/resize/785x/-/format/webp/Frame_312.png';
-  } else {
-    img.src = 'https://static.tildacdn.com/tild3231-6535-4032-a430-396331383431/Frame_311.png';
-  }
+  img.src = isMobile
+    ? 'https://optim.tildacdn.pub/tild3439-3361-4565-a137-663462363365/-/resize/785x/-/format/webp/Frame_312.png'
+    : 'https://static.tildacdn.com/tild3231-6535-4032-a430-396331383431/Frame_311.png';
 
   img.alt = 'Banner Image';
   img.style.width = '100%';
