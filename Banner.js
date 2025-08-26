@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // ====== СОЗДАЁМ БАННЕР ======
   const img = document.createElement('img');
-
   const isMobile = window.innerWidth <= 768;
   if (isMobile) {
     img.src = 'https://optim.tildacdn.pub/tild3439-3361-4565-a137-663462363365/-/resize/785x/-/format/webp/Frame_312.png';
