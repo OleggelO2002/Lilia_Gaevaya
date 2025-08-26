@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (scheduleBlock) {
         clearInterval(intervalId); // Останавливаем, если элемент найден
 
-        const url = 'https://asanna.online/page357';
+        const url = 'https://school.astrolog-liliya.ru/page173';
 
         fetch(url)
           .then(response => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const rawText = rawBlock.textContent.trim();
             console.log('Извлечённый текст:', rawText);
 
-            const urlMatch = rawText.match(/https:\/\/asanna\.online\/pl\/teach\/control\/lesson\/view\?id=\d+/);
+            const urlMatch = rawText.match(/https:\/\/school\.astrolog-liliya\.ru\/pl\/teach\/control\/lesson\/view\?id=\d+/);
             const titleMatch = rawText.match(/^(.*?)(?=\s*https:\/\/)/);
 
             if (!urlMatch || !titleMatch) {
