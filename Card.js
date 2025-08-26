@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   const lastShown = localStorage.getItem('dailyCardShownDate');
   const today = new Date().toISOString().split('T')[0];
 
+
   if (lastShown === today) return; // Уже показывали сегодня
   localStorage.setItem('dailyCardShownDate', today); // Записываем дату показа
 
