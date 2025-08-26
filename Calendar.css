@@ -79,7 +79,7 @@ margin-bottom: 30px;
   right: 20px;
   width: 20px;
   height: 12px;
-  background-image: url('https://static.tildacdn.info/tild3663-3837-4263-b339-643965623362/Vector_44.svg');
+  background-image: url('https://static.tildacdn.info/tild3965-6339-4639-b865-336533623038/Vector_44.svg');
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateY(-50%) rotate(0deg);
@@ -94,7 +94,7 @@ display: none;
 }
 
 body{
-background: #FAFAFA;
+background: #000000;
 }
 
 .xdget-lessonSchedule .closed{
@@ -106,11 +106,11 @@ border-radius: 15px 15px 0 0 !important;
 }
 
 .schedule-block .day-label {
-color: #ffffff;    
+color: #b884f9;    
 }
 
 .schedule-block .time {
-color: #ffffff;     
+color: #a88dc9;     
 }
 
 .xdget-lessonSchedule h3 {
@@ -154,9 +154,10 @@ font-size: 13px;
 text-align: center;
 color: #FFFFFF;
 padding: 10px 20px !important;
+transition: transform 0.4s ease;
 }
 .calendar-btn:hover {
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(107.81deg, #2F216C 0%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 100%);
+transform: translateY(-5px);
 }
 .schedule-block .day-label {
 margin-left: 18px;    
