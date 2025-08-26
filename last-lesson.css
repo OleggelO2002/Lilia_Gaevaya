@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+  --bg-gradient-start: #060225;
+  --bg-gradient-end: #060225;
+  --card-bg: #2A2544;
+  --card-border-gradient-start: #FFFFFF;
+  --card-border-gradient-end: #2A2544;
+  --text-white: #FFFFFF;
+  --menu-active-gradient: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
+}
+
+body{
+background: #000 ;    
+}
+
+.col-md-4{
+padding-left: 0px !important;
+}
+
+.lastLessonBlock {
+border-radius: 15px !important;
+padding-top: 10px !important;  
+box-shadow: 0px -6px 21.4px rgba(0, 0, 0, 0.05) !important;  
+background: 
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
+border: 1px solid transparent !important;
+}
+.lastLessonBlock .lesson-title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 15px;
+color: #DDDDDD
+/* identical to box height, or 115% */    
+}
+
+.lastLessonBlock .lesson-name {
+margin-top: 10px;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 450;
+font-size: 24px;
+line-height: 24px;
+color: #FFF;
+margin-bottom: 20px;
+}
+
+.lastLessonBlock .lesson-btn {
+padding: 10px 20px 10px 20px;
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 15px;
+border-radius: 5px;
+color: #FFF;
+transition: background 0.2s ease !important;
+}
+
+.lastLessonBlock .lesson-btn:hover{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(107.81deg, #2F216C 0%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 100%);
+text-decoration: none;
+}
