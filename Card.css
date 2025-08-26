@@ -1,3 +1,29 @@
+.buy-card-button{
+font-family: 'Montserrat';
+text-transform: uppercase;
+font-weight: 600;
+margin-top: 70px;
+display: none;
+padding: 12px 20px;
+background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #D5BAAF 10.32%, #D5BAAF 98.17%);
+color: #ffffff;
+border-radius: 8px;
+font-size: 15px;
+text-decoration: none;
+text-align: center;
+}
+.buy-card-button:hover{
+margin-top: 70px;
+display: block;
+padding: 12px 20px;
+background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.44) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #BFA59B 10.32%, #BFA59B 98.17%);
+color: #ffffff;
+border-radius: 8px;
+font-size: 15px;
+text-decoration: none;
+text-align: center;
+}    
+
 #daily-card-overlay {
   position: fixed;
   top: 0;
@@ -156,10 +182,9 @@
 }
 
 .card-back {
-background-image: url('https://static.tildacdn.com/tild3036-3036-4663-b663-376135626139/Frame_291.png');
+background-image: url('https://static.tildacdn.com/tild6362-3435-4332-a232-363234363163/photo_2025-05-19_13-.jpg');
 background-size: contain;
-background-repeat: no-repeat;  
-/background: #888;
+background-repeat: no-repeat;
 }
 
 .card.hiding {
