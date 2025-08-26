@@ -1,4 +1,10 @@
-document.addEventListener('DOMContentLoaded', async function () { 
+document.addEventListener('DOMContentLoaded', async function () {
+  const lastShown = localStorage.getItem('dailyCardShownDate');
+  const today = new Date().toISOString().split('T')[0];
+
+  if (lastShown === today) return; // Уже показывали сегодня
+  localStorage.setItem('dailyCardShownDate', today); // Записываем дату показа
+
   const cardPageUrl = 'https://school.astrolog-liliya.ru/page174';
 
   // Создаем overlay
@@ -32,6 +38,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       floatingCard.remove();
       floatingCard = null;
     }
+    const buyButton = document.querySelector('.buy-card-button-wrapper');
+    if (buyButton) buyButton.remove();
   });
 
   try {
@@ -40,9 +48,17 @@ document.addEventListener('DOMContentLoaded', async function () {
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
 
-    // Получаем ссылки на полные изображения из <a href="...">
-    const links = doc.querySelectorAll('#links a');
-    const images = Array.from(links).slice(0, 6).map(link => link.href);
+    // Извлекаем все изображения
+    const thumbs = doc.querySelectorAll('#links img');
+    const allImages = Array.from(thumbs).map(img => img.src);
+
+    // Функция выбора случайных N элементов
+    function getRandomItems(arr, n) {
+      const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, n);
+    }
+
+    const images = getRandomItems(allImages, 6);
 
     // Текст
     const textBlock = doc.querySelector('.text-for-card p');
@@ -79,6 +95,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         floatingCard.style.top = `${rect.top + window.scrollY}px`;
         floatingCard.style.width = `${rect.width}px`;
         floatingCard.style.height = `${rect.height}px`;
+        floatingCard.style.zIndex = '9999';
         document.body.appendChild(floatingCard);
 
         // Скрываем оригиналы
@@ -102,10 +119,25 @@ document.addEventListener('DOMContentLoaded', async function () {
           floatingCard.style.left = `${currentRect.left}px`;
           floatingCard.style.top = `${currentRect.top}px`;
 
-          // Флип
+          // Флип + добавляем кнопку
           setTimeout(() => {
             if (floatingCard) {
               floatingCard.classList.add('flipped');
+
+              // Кнопка "Купить карты"
+              const buyButtonWrapper = document.createElement('div');
+              buyButtonWrapper.className = 'buy-card-button-wrapper';
+              buyButtonWrapper.style.position = 'fixed';
+              buyButtonWrapper.style.top = `${currentRect.bottom + 20}px`;
+              buyButtonWrapper.style.left = `${currentRect.left + (currentRect.width / 2) - 80}px`;
+              buyButtonWrapper.style.zIndex = '99999999';
+
+              const buyButton = document.createElement('a');
+              buyButton.href = 'https://nadezhdaasanova.com/metaphorical_association_cards';
+              buyButton.textContent = 'Купить карты';
+              buyButton.className = 'buy-card-button';
+              buyButtonWrapper.appendChild(buyButton);
+              document.body.appendChild(buyButtonWrapper);
             }
           }, 100);
         }, 1000);
