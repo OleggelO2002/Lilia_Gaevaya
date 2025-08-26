@@ -10,10 +10,6 @@
   --menu-active-gradient: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);
 }
 
-body{
-background: #000 ;    
-}
-
 .col-md-4{
 padding-left: 0px !important;
 }
