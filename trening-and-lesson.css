@@ -491,6 +491,7 @@ position: relative;
 
 /*========== Текст внутри карточек ==========*/
 .stream-table tbody tr td .stream-title {
+  margin-top: 100px !important;
   color: var(--text-white) !important;
   font-family: 'Futura PT' !important;
   font-style: normal;
@@ -498,8 +499,8 @@ position: relative;
   font-size: 32px !important;
   line-height: 36px !important;
   padding: 0 !important;
-  position: absolute;
-  top: 140px !important;
+  /*position: absolute;
+  top: 140px !important;*/
   width: 90%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -519,8 +520,8 @@ position: relative;
   font-weight: 400 !important;
   font-size: 15px !important;
   line-height: 19px !important;
-  position: absolute;
-  top: 120px !important;
+  /*position: absolute;
+  top: 120px !important;*/
 }
 
 .stream-table tbody tr td div b {
