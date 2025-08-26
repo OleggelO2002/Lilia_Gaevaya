@@ -4,7 +4,6 @@ width: 100%;
 height: 100%;
 bottom: 70%;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @media screen and (min-width: 768px) {
 .xdget-training .lesson-list{
