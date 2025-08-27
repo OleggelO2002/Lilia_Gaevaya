@@ -520,6 +520,7 @@ position: relative;
   color: var(--text-white) !important;
   font-family: 'Futura PT' !important;
   font-style: normal;
+  max-width: 90% !important;
   font-weight: 400 !important;
   font-size: 15px !important;
   line-height: 19px !important;
