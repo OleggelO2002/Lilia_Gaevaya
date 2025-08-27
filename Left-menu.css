@@ -35,7 +35,8 @@ background: #ffffff !important;
 }
 
 .zk_left_menu {
-display: none !!important;   
+opacity: 0 !important;
+z-index: -1 !important;
 }
 .zk_log {
 position: absolute !important;
