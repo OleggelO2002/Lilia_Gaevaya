@@ -191,6 +191,9 @@ top: 20px;
 .menu-item a[title="Mobile"]::before {
   background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
 }
+.menu-item a[title="Chatium"]::before {
+  background-image: url('https://static.tildacdn.info/tild6564-3737-4261-a632-383331623162/sale-icon.svg');
+}
 
 
 .gc-account-leftbar.collapsed .menu-item-notifications_button_small::after{
