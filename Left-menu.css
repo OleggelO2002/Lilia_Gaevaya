@@ -35,7 +35,7 @@ background: #ffffff !important;
 }
 
 .zk_left_menu {
-display: none;   
+display: none !!important;   
 }
 .zk_log {
 position: absolute !important;
@@ -47,7 +47,7 @@ top: -67px !important;
 width: 90% !important;
 }
 .zk_log {
-display: none; 
+display: none !important; 
 }
 .menu-item.collapse-toggle{
 display: none !important;    
