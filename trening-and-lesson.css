@@ -541,7 +541,7 @@ position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  line-height: 70px;
+  margin-right: 0px !important;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white);
