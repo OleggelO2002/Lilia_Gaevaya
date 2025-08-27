@@ -13,6 +13,9 @@ margin-left: -20px !important;
 [class*=" lesson-id-"]{
 margin-left: 0px !important;
 }
+.xdget-root .page-full-block{
+margin-left: 25px !important;
+}
 }
 
 @media screen and (max-width: 768px) {
