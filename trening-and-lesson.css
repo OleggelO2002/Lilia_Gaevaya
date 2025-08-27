@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+@media screen and (max-width: 768px) {
+    .training-row td .stream-title {
+        display: block;
+        font-family: 'Montserrat' !important;
+    }
+}
+
+
+
 .training-image{
 position: absolute !important;
 width: 100%;
