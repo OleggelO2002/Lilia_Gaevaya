@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const supportBtn = document.createElement("li");
     supportBtn.classList.add("menu-item");
     supportBtn.innerHTML = `
-        <a href="https://t.me/ya_zabota" title="Служба заботы">
+        <a href="https://t.me/Liliya_Gaevaya_admin" title="Служба заботы">
             <img class="menu-item-icon" src="/public/img/service/support.png" alt="Служба заботы">
             <span></span>
         </a>
