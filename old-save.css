@@ -1,0 +1,271 @@
+/* ОФОРМЛЕНИЕ ГЛАВНОЙ СТРАНИЦЫ ТРЕНИНГОВ - начало */
+
+/*подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+:root {
+    --color1: #900098;
+    --color2: #f0dbf9;
+    --color3: #c254c2;
+    --white:  #ffffff;
+    --black:  #333333;
+    /*--background: rgba(143,194,216, 0.2);*/
+    --background: rgb(252, 245, 253);
+    --font:  'Comfortaa';
+}
+
+html body {
+    font-family: var(--font), sans-serif!important;
+    font-weight: 400; 
+}
+
+/* элементы с жирным начертанием */ 
+/*.f-header, .f-desc, .lt-block .f-btn, .title, .page-menu, .stream-title,  */
+.stream-title, h1, h2, h3, h4, h5, h6, html .gc-account-leftbar h3, .standard-page-content h1, {
+    font-family: var(--font), sans-serif!important;
+    font-weight: 700; 
+}  
+
+
+/* Добавление фона всей страницы через картинку */
+/* body {
+    position: relative;
+    background: #211F20 url(https://fs.gcfiles.net/fileservice/file/download/a/27113/sc/180/h/0641fdda11e12a38c0958be9b7b912c1.png) no-repeat bottom center fixed;
+    height: 100vh !important;
+}*/
+
+/* Добавление фона всей страницы через заливку цветом */
+/*body {
+    background: #007b98;
+}*/
+
+/* Логотип аккаунта */
+.logo-link img {
+    width: 40px !important;
+    /* если хотим скрыть */
+    /*display: none; */
+}
+
+/* Заголовок Главной страницы тренингов 
+(название меняем в разделе "Заголовой страницы" через "Настроить вид") */
+.gc-main-content .page-header h1 {
+    color: var(--black);
+    font-size: 36px;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+}
+
+/* Разделитель после Заголовка */
+.content-menu {
+    border-bottom: 1px dashed var(--color1);
+    margin-bottom: 10px;
+    /* если хотим скрыть */
+    /*display: none; */
+}
+
+/* Скрываем второй заголовок */
+.gc-main-content h3 {
+    display: none;
+}
+
+/* контейнер с тренингами */
+.stream-table {
+    margin-left: 0 !important;
+    position: relative;
+}
+
+/* оформляем плашкой каждый тренинг */
+.stream-table tr {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* высота */
+    /* height: 120px;*/
+    height: auto;
+    margin-bottom: 20px;
+    /* padding: 0;*/
+    background: #ffffff;
+    border: 1px solid var(--color1);
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/* эффект при наведении на тренинг (появляется заливка и движение) */
+.stream-table tr:hover {
+    background: var(--background);
+    /* смещение вправо */
+    transform: translatex(5px);
+    /* увеличение */
+    /* transform: scale(1.02); */
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+}
+
+/* убираем системный эффект заливки фона при наведении */
+.stream-table tr td:hover {
+    background: none !important;
+}
+
+/* убираем лишние отступы у ячейки, выравниваем по высоте посередине */
+.stream-table tr td {
+    display: block;
+    padding: 0!important;
+    height: auto !important;
+    position: relative;
+}
+
+/* отступы внутри плашки с тренингом, чтобы поместилась иконка */
+.stream-table tr td a {
+    display: block;
+    width: 100%;
+    /* внутренние отступы: сверху, справа, снизу, слева */
+    padding: 25px 25px 25px 110px;
+    /* позиционировать псевдоэлемент будем относительно текущего элемента  */
+    position: relative;   
+}
+
+/* название тренинга */
+.stream-table tr td a .stream-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color1);
+}
+/* строка с количеством уроков, автором и описанием */
+.stream-table tr td div {
+    padding-top: 5px;
+}
+
+/* оформляем количество уроков */
+.stream-table tr td div b {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    /* делаем небольшой фон вокруг количества уроков */
+    /* background-color: #f5f5f5;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 9px;*/
+}
+
+/* ОФОРМЛЕНИЕ ГЛАВНОЙ СТРАНИЦЫ ТРЕНИНГОВ - конец */
+
+
+
+/* ДОБАВЛЯЕМ ИКОНКИ В ПЛАШКАХ ТРЕНИНГОВ - начало */
+
+/* параметры псевдоэлемента - иконки для плашки тренинга */
+ .stream-table tr a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translatey(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/* псевдоэлемент - иконка одинаковая для всех тренингов */
+.stream-table tr a::before {
+    background-image: url('https://fs.getcourse.ru/fileservice/file/download/a/615133/sc/126/h/2c24fc743c9f3b220c3fb0045260e6c4.png');
+    width: 70px;
+    height: 70px;
+}
+
+/* псевдоэлемент - иконка для конкретного тренинга */
+/*.stream-table tr[data-training-id="698862354"] a::before {
+    background-image: url('https://fs.getcourse.ru/fileservice/file/download/a/615133/sc/221/h/9d7754da06fdf878afc2f0668a2197d9.png');
+    width: 70px;
+    height: 70px;
+}
+
+.stream-table tr[data-training-id="IDтренинга2"] a::before {
+    background-image: url('https://fs.getcourse.ru/fileservice/file/download/a/615133/sc/221/h/9d7754da06fdf878afc2f0668a2197d9.png');
+    width: 70px;
+    height: 70px;
+}*/
+
+/* адаптация под мобильные устройства */
+
+/* на маленьких экранах убираем иконку тренинга 
+(по желанию, вы можете и оставить, если не мешает визуально просмотру) */
+@media (max-width: 425px) {
+    .stream-table tr td a {
+        padding-left: 25px;
+    }
+    .stream-table tr td a::before {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .stream-table tr td a .stream-title {
+        display: block;
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+/* ДОБАВЛЯЕМ ИКОНКИ В ПЛАШКАХ ТРЕНИНГОВ - конец */
+
+
+
+/* ОФОРМЛЕНИЕ РАСПИСАНИЯ - начало */
+
+/* оформляем блок с контентом */
+.bg-block.schedule-block {
+    font-family: var(--font), sans-serif!important; 
+    background: rgb(252, 245, 253);
+    border-radius: 20px !important;
+    box-shadow: 0 5px 10px 0 rgba(55, 55, 55, .1);
+    margin-bottom: 20px;
+}
+
+/* Заголовок Актуальные события */
+.xdget-lessonSchedule H3 {
+    color: #333333; !important;
+    /*text-transform: uppercase;*/
+    margin-bottom: 20px;
+}
+
+/* Дата и день недели */
+.xdget-lessonSchedule .day-label {
+    display: block;
+    font-weight: 500;
+    color: #900098 !important;
+    margin-left: 70px;
+    margin-bottom: 5px;
+}
+
+/* Блок временем открытия урока и названием урока */
+.xdget-lessonSchedule .day .record {
+    padding-left: 0px;
+}
+
+/* Время открытия урока */
+.xdget-lessonSchedule .time {
+    color: #333333 !important;
+    font-weight: 500;    
+}
+
+/* Блок с названием урока и курса */
+.xdget-lessonSchedule .event {
+    color: #94999C !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+/* Название урока */
+.xdget-lessonSchedule .event a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333 !important;
+    padding-bottom: 0px !important;
+    margin-bottom: -10px;
+}
+
+/* ОФОРМЛЕНИЕ РАСПИСАНИЯ - конец */
+
