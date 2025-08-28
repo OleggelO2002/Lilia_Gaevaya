@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('https://fs.getcourse.ru/fileservice/file/download/a/156488/sc/336/h/a75ef6f63d8afd90ebffa23820db3313.woff') format('woff');
+  font-weight: 400; /* Book */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('https://fs.getcourse.ru/fileservice/file/download/a/156488/sc/61/h/eb44d4b8579036d6ce58bd0690152396.woff') format('woff');
+  font-weight: 600; /* Demi */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('https://fs.getcourse.ru/fileservice/file/download/a/156488/sc/281/h/dcab20e18ad5d2c464f60a6482d6c29e.woff') format('woff');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*===================CSS для поиска===================*/
 #searchInput {
 color: #060225;  
