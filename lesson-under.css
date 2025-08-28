@@ -24,8 +24,19 @@
   font-display: swap;
 }
 
-
-
+.logo-link img {
+position: absolute !important;
+margin-top: 50px !important;
+margin-left: 30px;
+}
+body{
+background: #100A2A !important;   
+}
+@media (min-width: 768px) {
+.breadcrumb {
+margin-left: 30px !important;    
+}
+}
 .gc-main-content {
     background-image: url('https://static.tildacdn.com/tild3664-3235-4434-b964-313339626163/lilia_gaevaya_v2_les.png') !important;
     background-repeat: repeat-y !important; /* повтор по вертикали */
