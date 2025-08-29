@@ -523,6 +523,7 @@ position: relative;
 }
 
 /*========== Общие стили страницы ==========*/
+@media screen and (min-width: 768px) {
 body {
   background: 
     url("https://static.tildacdn.com/tild6638-3535-4665-a434-396166643662/lilia_gaevaya_v2_les.png") no-repeat right center / auto 100%,
@@ -531,6 +532,18 @@ body {
   margin: 0;
   font-family: 'Futura PT', sans-serif;
   color: var(--text-white);
+}
+}
+@media screen and (max-width: 768px) {
+body {
+  background: 
+    url("https://static.tildacdn.com/tild3937-3962-4436-b032-356464616139/iPhone_SE_-_1.png") no-repeat right center / auto 100%,
+    linear-gradient(223.91deg, var(--bg-gradient-start) -1.97%, var(--bg-gradient-end) 69.05%);
+  background-attachment: fixed, scroll;
+  margin: 0;
+  font-family: 'Futura PT', sans-serif;
+  color: var(--text-white);
+}
 }
 
 .logo-link img {
