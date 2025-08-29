@@ -125,6 +125,12 @@ margin-left: 0px !important;
 .xdget-root .page-full-block{
 margin-left: 25px !important;
 }
+.container {
+    width: 100%;
+    max-width: 90%; /* максимальная ширина для больших экранов */
+    margin: 0 auto;
+    padding: 0 15px; /* отступы по бокам */
+}
 }
 
 @media screen and (max-width: 768px) {
