@@ -626,7 +626,7 @@ position: relative;
 }
 /*========== Заголовки страницы ==========*/
 .page-header h1 {
-  font-family: 'Felidae', sans-serif;
+  font-family: "Libertinus Serif Display", system-ui;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
