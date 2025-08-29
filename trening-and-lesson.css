@@ -26,7 +26,38 @@
 }
 
 
+.tg-left-banner {
+border-radius: 15px !important;
+padding-top: 10px !important;
+box-shadow: 0px -6px 21.4px rgba(0, 0, 0, 0.05) !important;
+background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
+border: 1px solid transparent !important;    
+}
 
+.tg-left-banner .xdget-button{
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);    
+transition: transform 0.5s ease;
+}
+.tg-left-banner .xdget-button:hover{
+transform: translateY(-3px);   
+}
+
+
+.help-left-banner {
+border-radius: 15px !important;
+padding-top: 10px !important;
+box-shadow: 0px -6px 21.4px rgba(0, 0, 0, 0.05) !important;
+background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
+border: 1px solid transparent !important;
+}
+
+.help-left-banner .supportLink a {
+background: linear-gradient(107.81deg, #2F216C -29.24%, #5F3ECF 25.35%, #5F3ECF 52.98%, #2F216C 107.57%);    
+transition: transform 0.5s ease;
+color: #FFF;
+padding: 5px 10px;
+border-radius: 5px !important;
+}
 @media screen and (max-width: 768px) {
     .stream-table tbody tr td .stream-title {
         display: block;
