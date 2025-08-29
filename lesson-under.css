@@ -181,6 +181,7 @@ font-size: 13px !important;
 color: #fff;    
 }
 
+@media (min-width: 768px) {
 .lesson-title-value {
 position: relative !important;
 font-family: 'Montserrat'!important;
@@ -191,7 +192,19 @@ text-align: center !important;
 text-transform: uppercase !important;
 color: #FFFFFF !important;  
 }
-
+}
+@media (max-width: 768px) {
+.lesson-title-value {
+position: relative !important;
+font-family: 'Montserrat'!important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 16px !important;
+text-align: center !important;
+text-transform: uppercase !important;
+color: #FFFFFF !important;  
+}  
+}
 .lesson-header-block.row-section {
   display: flex;
   flex-direction: column;   /* делаем вертикальную колонку */
