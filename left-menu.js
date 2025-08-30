@@ -9,19 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
     `;
 
-    // Добавляем кнопку "Служба заботы"
-    const supportBtn = document.createElement("li");
-    supportBtn.classList.add("menu-item");
-    supportBtn.innerHTML = `
-        <a href="https://t.me/Liliya_Gaevaya_admin" title="Служба заботы">
-            <img class="menu-item-icon" src="/public/img/service/support.png" alt="Служба заботы">
-            <span></span>
-        </a>
-    `;
-
     const menu = document.querySelector(".gc-account-user-menu");
     if (menu) {
-        menu.appendChild(supportBtn);
         menu.appendChild(toggleBtn);
     }
 
