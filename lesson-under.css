@@ -94,12 +94,12 @@ color: #FFF;
 }
 
 .breadcrumb a {    
-font-family: 'Futura PT';
+font-family: 'Futura PT' !important;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 23px;
-color: #FFF;
+color: #FFF !important;
 }
 .breadcrumb a:hover  {
 text-decoration: none !important;   
