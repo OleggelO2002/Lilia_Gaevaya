@@ -182,6 +182,8 @@ height: auto !important;
 }
 .bgc_nld-timecodes .f-text{
 background: #000 !important;
+padding: 20px !important;
+border-radius: 10px !important;
 }
 
 
