@@ -23,7 +23,9 @@
 }
 
 
-
+.menu-item.new-chatium-icon{
+display: none !important;
+}
 @media screen and (min-width: 768px) {
 #searchContainer{
 box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
