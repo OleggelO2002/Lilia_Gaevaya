@@ -23,7 +23,7 @@
 }
 
 
-.menu-item.new-chatium-icon{
+.gc-account-user-menu .menu-item.new-chatium-icon{
 display: none !important;
 }
 @media screen and (min-width: 768px) {
