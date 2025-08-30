@@ -60,7 +60,7 @@
   margin-bottom: 15px;
 }
 
-.calendar-choic  e-btn {
+.calendar-choice-btn {
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -81,10 +81,16 @@
 }
 
 .calendar-choice-close {
-  background: transparent;
-  color: #555;
-  margin-top: 10px;
-  font-size: 14px;
+ background: #555 !important;
+  width: 60%;
+  padding: 5px 0;
+  margin-top: 25px !important;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
 }
 
 
