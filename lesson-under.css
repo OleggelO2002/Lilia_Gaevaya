@@ -197,16 +197,16 @@ border-bottom: 0px !important;
     .lesson-header-block.row-section {
     border-radius: 10px;
     background-image: url('https://static.tildacdn.com/tild3633-6538-4164-b161-316537666666/Frame_321.png') !important;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
     background-size: cover !important; /* вот здесь вместо 100% auto */
     }    
 }
 @media (min-width: 768px) {
     .lesson-header-block.row-section {
         background-image: url('https://static.tildacdn.com/tild6362-3264-4237-a239-393464633239/Frame_317.png') !important;
-        background-repeat: no-repeat;
-        background-position: center center;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
         background-size: cover !important; /* вот здесь вместо 100% auto */
         width: 70vw !important;
         border-radius: 15px;        
