@@ -23,6 +23,28 @@
   font-style: normal;
   font-display: swap;
 }
+/* Общий эффект на hover */
+.btn-new-design-download .btn-success:hover::before,
+.btn-new-design-empty .btn-success:hover::before,
+.btn-new-design-link .btn-success:hover::before,
+.btn-new-design-pdf .btn-success:hover::before,
+.btn-new-design-teletype .btn-success:hover::before,
+.btn-new-design-test .btn-success:hover::before {
+    animation: download-bounce 0.4s ease;
+}
+
+/* Анимация */
+@keyframes download-bounce {
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(calc(-50% + 6px));
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
 
 .logo-link img {
 position: absolute !important;
