@@ -443,7 +443,7 @@ color: #6A29AD;
 color: #6A29AD !important;    
 }
 
-.modal-block-content .btn-success {
+/*.modal-block-content .btn-success {
   background-color: transparent !important;
   display: inline-block;
   font-family: 'Montserrat' !important;
@@ -456,14 +456,14 @@ color: #6A29AD !important;
   cursor: pointer;
   border: 20px solid transparent !important;
   -webkit-border-image: url('https://static.tildacdn.info/tild6236-3835-4166-b336-623563653733/Group_48097408.svg') 25 round !important;
-  background-clip: padding-box !important; /* чтобы фон не перекрывал края */ 
+  background-clip: padding-box !important;
   transition: transform 0.4s ease;
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
 .modal-block-content .btn-success:hover {
 transform: translatey(-15px)
-}
+} */
 
 /*.text-large.f-text {
 background: #FFF !important;
