@@ -24,6 +24,10 @@
   font-display: swap;
 }
 
+.answer-text {
+color: #000 !important;
+}
+
 .block-box{
 background-color: transparent !important;    
 }
@@ -307,6 +311,7 @@ font-style: normal !important;
 font-weight: 500 !important;
 font-size: 13px !important;
 color: #ffffff !important;
+background: transparent !important; 
 }
 @media (max-width: 768px) {
     .lesson-navigation a{
