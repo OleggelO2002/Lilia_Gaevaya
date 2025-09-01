@@ -23,6 +23,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+.block-box{
+background-color: transparent !important;    
+}
+
 /* Общий эффект на hover */
 .btn-new-design-download .btn-success:hover::before,
 .btn-new-design-empty .btn-success:hover::before,
