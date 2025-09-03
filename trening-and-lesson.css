@@ -481,9 +481,9 @@ transform: scale(1.4) rotate(180deg) translateX(-5px);
 position: relative;
 top: 3px;
 }
-.content-menu {
+/*.content-menu {
 display: none;    
-}
+}*/
 @media screen and (max-width: 768px) {
 .page-header h1{
 font-size: 20px;
