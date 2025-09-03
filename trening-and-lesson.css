@@ -25,7 +25,11 @@
   font-display: swap;
 }
 
-
+.stream-table tr td a{
+position: absolute !important;    
+top: 10px !important;
+left: 20px !important;
+}
 .tg-left-banner {
 border-radius: 15px !important;
 padding-top: 10px !important;
