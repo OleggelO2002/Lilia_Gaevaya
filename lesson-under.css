@@ -27,7 +27,9 @@
 .answer-text {
 color: #000 !important;
 }
-
+.lesson-description-value{
+color: #FFF !important;
+}
 .block-box{
 background-color: transparent !important;    
 }
