@@ -414,7 +414,8 @@ background: #FFFFFF;
 }
 .lt-lesson-comment-block .col-md-12 {
 background: #FFF !important;
-width: calc(100% - 15px) !important;
+width: calc(100% - 30px) !important;
+margin-left: 15px !important;
 }
 
 textarea {
