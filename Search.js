@@ -1,7 +1,6 @@
 // ======= Отвечает за поиск - обработчик + HTML =======
 // Этот блок добавляет обработчик для поля поиска и отображает результаты
 // ==========================================================================
-
 // HTML-код для мобильной версии
 const searchContainerHTMLMobile = `
   <div id="searchContainerMobile" style="position: relative; z-index: 1000; display: flex; align-items: center; background-color: white; border-radius: 20px; overflow: hidden; width: 40px; transition: width 0.3s ease;">
