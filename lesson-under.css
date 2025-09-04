@@ -24,7 +24,13 @@
   font-display: swap;
 }
 
+.text-large h2 {
+color: #FFF;    
+}
 
+.countdown-el {
+color: #FFF;    
+}
 .table{
 color: #FFF !important;       
 }
