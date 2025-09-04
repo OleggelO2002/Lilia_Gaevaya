@@ -24,6 +24,10 @@
 
 
 /*===================CSS для поиска===================*/
+#searchInputMobile{
+color: #000 !important;
+}
+
 #searchInput {
 color: #060225;  
 }
