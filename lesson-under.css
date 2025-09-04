@@ -24,6 +24,10 @@
   font-display: swap;
 }
 
+
+.table{
+color: #FFF !important;       
+}
 .answer-text {
 color: #000 !important;
 }
