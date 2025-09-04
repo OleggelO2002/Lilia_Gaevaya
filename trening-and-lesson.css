@@ -25,6 +25,18 @@
   font-display: swap;
 }
 
+
+.xdget-common-user-form h3 {
+color: #000 !important;    
+}
+.offer-xdget-container label {
+color: #000 !important;    
+}
+
+.form-field-phone .label-value {
+color: #000 !important;    
+}
+
 .stream-table tr td a{
 position: absolute !important;    
 top: 10px !important;
