@@ -51,25 +51,3 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Ошибка при загрузке расписания:', err);
     });
 });
-
-
-
-setInterval(() => {
-  const mobileContainer = document.getElementById('searchContainerMobile');
-  const mobileInput = document.getElementById('searchInputMobile');
-  const mobileResults = document.getElementById('searchResultsMobile');
-
-  const desktopContainer = document.getElementById('searchContainer');
-  const desktopInput = document.getElementById('searchInput');
-  const desktopResults = document.getElementById('searchResults');
-
-  console.log('=== Проверка поиска ===');
-  console.log('Mobile container:', !!mobileContainer);
-  console.log('Mobile input:', mobileInput ? mobileInput.style.display : 'нет');
-  console.log('Mobile results visible:', mobileResults ? mobileResults.style.display : 'нет');
-
-  console.log('Desktop container:', !!desktopContainer);
-  console.log('Desktop input:', !!desktopInput);
-  console.log('Desktop results visible:', desktopResults ? desktopResults.style.display : 'нет');
-  console.log('=========================');
-}, 3000);
