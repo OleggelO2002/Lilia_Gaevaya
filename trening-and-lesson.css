@@ -477,7 +477,7 @@ display: inline-block; /* Позволяет задать размеры для 
 width: 15px; /* Ширина изображения */
 height: 15px; /* Высота изображения */
 mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
-background-color: #292929; /* Тот самый "цвет" SVG */
+background-color: #FFFFFF; /* Тот самый "цвет" SVG */
 background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
 margin-left: 5px; /* Отступ слева от псевдоэлемента */
 transform: scale(1.4) rotate(180deg);
@@ -491,7 +491,7 @@ display: inline-block; /* Позволяет задать размеры для 
 width: 15px; /* Ширина изображения */
 height: 15px; /* Высота изображения */
 mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
-background-color: #292929; /* Тот самый "цвет" SVG */
+background-color: #FFFFFF; /* Тот самый "цвет" SVG */
 background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
 margin-left: 5px; /* Отступ слева от псевдоэлемента */
 transform: scale(1.4) rotate(180deg) translateX(-5px);
