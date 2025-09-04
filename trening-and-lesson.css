@@ -26,6 +26,10 @@
 }
 
 
+body.chatium_body .custom-banner {
+  margin-top: 70px !important;
+}
+
 .xdget-common-user-form h3 {
 color: #000 !important;    
 }
