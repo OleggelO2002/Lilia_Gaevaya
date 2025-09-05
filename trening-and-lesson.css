@@ -25,6 +25,9 @@
   font-display: swap;
 }
 
+.panel.panel-default {
+color: #000 !important;    
+}
 
 body.chatium_body .custom-banner {
   margin-top: 70px !important;
