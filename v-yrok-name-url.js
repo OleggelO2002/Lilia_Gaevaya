@@ -7,7 +7,7 @@ $(document).ready(function () {
 
   const iframe = document.createElement('iframe');
   iframe.style.display = 'none';
-  iframe.src = `https://asanna.online/page356?lessonTitle=${encodeURIComponent(lessonTitle)}&lessonUrl=${encodeURIComponent(currentUrl)}`;
+  iframe.src = `https://school.astrolog-liliya.ru/page172?lessonTitle=${encodeURIComponent(lessonTitle)}&lessonUrl=${encodeURIComponent(currentUrl)}`;
   document.body.appendChild(iframe);
 
   console.log('Скрытый iframe создан и данные отправлены.');
