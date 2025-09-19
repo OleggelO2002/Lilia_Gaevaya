@@ -24,6 +24,16 @@
   font-display: swap;
 }
 
+    .modal-dialog .modal-content .modal-body .gc-modal-content .container {
+        width: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-right: initial !important;
+    }
+}
+
+
+
 .text-large h2 {
 color: #FFF;    
 }
