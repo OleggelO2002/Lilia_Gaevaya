@@ -227,5 +227,7 @@ font-weight: 700;
 }
 
 .chat-item:hover{
-  background: none !important;
+  background: 
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(165.55deg, var(--card-border-gradient-start) -2.53%, var(--card-border-gradient-end) 79.97%) border-box;
 }
