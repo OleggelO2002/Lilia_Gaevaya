@@ -225,3 +225,7 @@ color: #b884f9 !important;
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
 }
+
+.chat-item:hover{
+  background: none !important;
+}
